@@ -1,0 +1,272 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+        /* background-image: linear-gradient(
+        to right bottom,
+        rgba(113, 169, 214, 0.8), 
+        rgba(36, 109, 114, 0.8)), 
+        url(img/rd\ portrait.PNG);
+    background-size: cover;
+    background-position: top;
+    position: relative; */
+}
+
+#about {
+            background-image: linear-gradient(
+        to right bottom,
+        rgba(113, 169, 214, 0.8), 
+        rgba(36, 109, 114, 0.8)), 
+        url(img/rd2scale.webp);
+    max-width: 2500px;
+    max-height: 1080px;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+}
+
+body {
+    font-family: 'Teko', 'Ubuntu', sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #777;
+    padding: 3rem;
+}
+
+ul {
+    display: flex;
+    text-transform: uppercase;
+    justify-content: space-evenly;
+    list-style: none;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.header {
+    height: 77vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(113, 169, 214, 0.8), 
+        rgba(36, 109, 114, 0.8)), 
+        url(img/rd2scale.webp);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    
+    clip-path: polygon(0 25vh, 100% 0, 100% 67vh, 0 100%);
+}
+
+.aboutheader {
+    height: 100vh;
+    position: relative;
+}
+
+.text-box {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.heading-primary {
+    color: #fff;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
+}
+
+.heading-primary-main {
+    display: block;
+    font-size: 8rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+
+    animation-name: moveInBottom;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+
+.heading-primary-sub {
+    display: block;
+    font-size: 4rem;
+    font-weight: 300;
+    letter-spacing: 1.75rem;
+    animation: moveInTop 2s ease-out;
+}
+
+.canada {
+    color: red;
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-200px,);
+    }
+
+    80% {
+        transform: translateX(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    } 
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px,);
+    }
+
+    80% {
+        transform: translateX(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    } 
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    } 
+}
+
+@keyframes moveInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    } 
+}
+
+
+.btn:link, .btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all .2s;
+    position: relative;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(36, 109, 114, 0.8);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(36, 109, 114, 0.8);
+}
+
+.btn-white {
+    background-color: #fff;
+    color: rgba(36, 109, 114, 0.8);
+}
+
+.btn-slate {
+    background-color: rgba(36, 109, 114, 0);;
+    color: #fff;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: #fff;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom 0.5s ease-out .75s;
+    animation-fill-mode: backwards;
+}
+
+p {
+    font-family: lato;
+    font-weight: 400;;
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    line-height: 5rem;
+}
+
+a {
+    color: inherit;
+}
+
+footer {
+text-align: end;
+text-transform: uppercase;
+font-size: 1rem;
+color: rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (max-width : 1200px) {
+    html {
+        font-size: 40%;
+    }
+}
+
+@media screen and (max-width : 600px) {
+    html {
+        font-size: 35%;
+    }
+}
+
+@media screen and (max-width : 500px) {
+    html {
+        font-size: 25%;
+    }
+    .heading-primary-main {
+        letter-spacing: 1.25rem;
+    }
+    .heading-primary-sub {
+        letter-spacing: 1rem;
+    }
+}
+
+@media screen and (max-width : 300px) {
+    html {
+        font-size: 15%;
+    }
+}

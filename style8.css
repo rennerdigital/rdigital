@@ -1,4 +1,4 @@
-*,
+/* *,
 *::after,
 *::before {
     margin: 0;
@@ -10,14 +10,14 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
-        /* background-image: linear-gradient(
+        background-image: linear-gradient(
         to right bottom,
         rgba(113, 169, 214, 0.8), 
         rgba(36, 109, 114, 0.8)), 
         url(img/rd\ portrait.PNG);
     background-size: cover;
     background-position: top;
-    position: relative; */
+    position: relative;
 }
 
 #about {
@@ -269,4 +269,4 @@ color: rgba(0, 0, 0, 0.8);
     html {
         font-size: 15%;
     }
-}
+} */

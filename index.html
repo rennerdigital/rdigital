@@ -9,36 +9,48 @@
         <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="icon-font.css">
-        <link rel="stylesheet" href="style8.css">
+        <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/rd gray.png">
+        <script src="https://kit.fontawesome.com/25bc09f321.js" crossorigin="anonymous"></script>
+        <script src="script.js" defer></script>
         
         <title>r.d</title>
     </head>
     <body>
 
-        <nav class="nav">
-            <ul>
-                <li><a href="about.html" class="btn btn-white btn-animated">about</a></li>
-                <li><a href="work.html" class="btn btn-white btn-animated">work with me</a></li>
-                <li><a href="contact.html" class="btn btn-white btn-animated">contact</a></li>
-            </ul>
-        </nav>
-
-        <header class="header">
-            <div class="text-box">
-                <h1 class="heading-primary">
-                    <span class="heading-primary-main">
-                        renner.digital
-                    </span>
-                    <span class="heading-primary-sub">
-                        web developer | <span class="canada">canadian</span> 
-                    </span>
-                </h1>
-            </div>
-        </header>
-
+        <header class="header" id="header">
+            <nav class="navbar container">
+               <a href="./index.html" class="brand">r.d</a>
+               <div class="burger" id="burger">
+                  <span class="burger__line"></span>
+                  <span class="burger__line"></span>
+                  <span class="burger__line"></span>
+               </div>
+               <div class="menu" id="menu">
+                  <ul class="menu__inner">
+                     <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+                     <li class="menu__item"><a href="about.html" class="menu__link">About</a></li>
+                     <li class="menu__item"><a href="portfolio.html" class="menu__link">Portfolio</a></li>
+                     <li class="menu__item"><a href="work.html" class="menu__link">Work</a></li>
+                     <li class="menu__item"><a href="contact.html" class="menu__link">Contact</a></li>
+                     <li class="menu__item"><a href="https://twitter.com/rennerdigital" target="_blank" class="menu__link"><i class="fa-brands fa-twitter"></i></a></li>
+                     <li class="menu__item"><a href="https://www.linkedin.com/in/rennermccreath/" target="_blank" class="menu__link"><i class="fa-brands fa-linkedin"></i></a></li>
+                     <li class="menu__item"><a href="https://github.com/rennerdigital" target="_blank" class="menu__link"><i class="fa-brands fa-github"></i></a></li>
+                  </ul>
+               </div>
+            </nav>
+         </header>
+        <main class="main">
+         <section class="title">
+            <h1 class="title__main">renner.digital</h1>
+            <h3 class="title__sub--main">web developer | <span class="title__sub--cdn">canadian</span></h3>
+            <h6 class="title__text">Helping businesses worldwide stake their digital claim.</h6>
+            <a href="about.html" class="btn btn-white btn-animated"><span class="btn__text">Let's Go</span></a>
+         </section>
+         <section class="image"></section>
+        </main>
         <footer>
-            <div class="copyright">Copyright &#169 2022 Renner Digital</div>
+            copyright &#169 2022 renner.digital
         </footer>
     </body>
 </html>

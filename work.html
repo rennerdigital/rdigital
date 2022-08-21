@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html id="about" lang="en">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,39 +9,66 @@
         <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="icon-font.css">
-        <link rel="stylesheet" href="style8.css">
+        <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/rd gray.png">
+        <script src="https://kit.fontawesome.com/25bc09f321.js" crossorigin="anonymous"></script>
+        <script src="script.js" defer></script>
         
         <title>r.d</title>
     </head>
     <body>
 
-        <nav class="nav">
-            <ul>
-                <li><a href="index.html" class="btn btn-slate btn-animated">home</a></li>
-                <li><a href="about.html" class="btn btn-slate btn-animated">about</a></li>
-                <li><a href="contact.html" class="btn btn-slate btn-animated">contact</a></li>
-            </ul>
-        </nav>
-
-        <header class="aboutheader">
-            <div class="text-box">
-                <h1 class="heading-primary">
-                    <span class="heading-primary-main">
-                        Together, let's build.
-                    </span>
-                    <span class="heading-primary-sub">
-                        the Renner Digital method
-                    </span>
-                </h1>
-                <p>Whether you have an existing website, or are looking to start from scratch, it starts with a <strong>free</strong> consultation.</p>
-                <p>You can contact me via <a href="mailto:rennermccreathdigital@gmail.com" target="blank">email</a> or <a href="https://www.instagram.com/rennermccreathdigital/" target="blank">social media</a>. I look forward to hearing from you!</p>
-                </span>
-            </div>
-        </header>
-
+        <header class="header" id="header">
+            <nav class="navbar container">
+               <a href="./index.html" class="brand">r.d</a>
+               <div class="burger" id="burger">
+                  <span class="burger__line"></span>
+                  <span class="burger__line"></span>
+                  <span class="burger__line"></span>
+               </div>
+               <div class="menu" id="menu">
+                  <ul class="menu__inner">
+                    <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+                    <li class="menu__item"><a href="about.html" class="menu__link">About</a></li>
+                    <li class="menu__item"><a href="portfolio.html" class="menu__link">Portfolio</a></li>
+                    <li class="menu__item"><a href="work.html" class="menu__link">Work</a></li>
+                    <li class="menu__item"><a href="contact.html" class="menu__link">Contact</a></li>
+                    <li class="menu__item"><a href="https://twitter.com/rennerdigital" target="_blank" class="menu__link"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li class="menu__item"><a href="https://www.linkedin.com/in/rennermccreath/" target="_blank" class="menu__link"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li class="menu__item"><a href="https://github.com/rennerdigital" target="_blank" class="menu__link"><i class="fa-brands fa-github"></i></a></li>
+                  </ul>
+               </div>
+            </nav>
+         </header>
+        <main class="about">
+         <section class="title">
+            <h1 class="about__main">The renner.digital method</h1>
+            <h3 class="about__sub">Partnership | Collaboration</h3>
+            <h6 class="about__text">Whether you're just launching a new business (congrats!) or are already up and running - the internet can be an intimidating place. <span class="title__sub--cdn">Renner.Digital is about establising a partnership</span> - getting to know the business, your individual goals, and your vision of a perfect website is the foundation of our business. Below, please find a list of some of the services we provide. If something you'd like done isn't listed below, let us know anyways - we'll do our absolute best to accommodate.</h6>
+            <h3 class="about__sub">All business owners</h3>
+            <h6 class="about__text">
+                <ul>
+                    <li><span class="title__sub--cdn">A free 30-minute consultation</span> where we get to know you, your business or idea, and vision.</li>
+                    <li><span class="title__sub--cdn">Clients with no existing website:</span> A complete walkthrough of how domain names and web hosting works - you ask every single question you can think of, and we put your mind at ease.</li>
+                    <li><span class="title__sub--cdn">Existing Websites:</span> An assessment of your current domain name and hosting plan.</li>
+                    <li><span class="title__sub--cdn">A detailed estimate</span> of all services to be provided, your investment, and any other operational expenses (domain name and hosting).</li>
+                    <li><span class="title__sub--cdn">Revisions</span> once your site is complete.</li>
+                </ul>
+            </h6>
+            <h3 class="about__sub">Additional Services</h3>
+            <h6 class="about__text">
+                <ul>
+                    <li><span class="title__sub--cdn">Search Engine Optimization</span> - move your site to the front of the class, and get all the internet foot traffic.</li>
+                    <li><span class="title__sub--cdn">E-mail setup</span> - wanting a yourname@yourbusiness.com? We can help.</li>
+                    <li>And much more!</li>
+                </ul>
+            </h6>
+            <a href="contact.html" class="btn btn-white btn-animated"><span class="btn__text">Let's Get Started</span></a>
+         </section>
+         <section class="image"></section>
+        </main>
         <footer>
-            <div class="copyright">Copyright &#169 2022 Renner Digital</div>
+            copyright &#169 2022 renner.digital
         </footer>
     </body>
 </html>

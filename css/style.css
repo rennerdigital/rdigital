@@ -367,6 +367,7 @@ footer {
   .title__sub {
     color: black; }
   .main {
+    min-height: 90vh;
     padding-top: 30rem;
     background-image: linear-gradient(to right bottom, rgba(113, 169, 214, 0.8), rgba(36, 109, 114, 0.8)), url(../img/rd2scale.webp);
     background-size: cover;
@@ -384,14 +385,18 @@ footer {
   .title__text {
     max-width: 90%; } }
 
-@media screen and (max-width: 600px) {
-  .title__text, .about__text {
-    max-width: 100%; } }
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 35%; } }
 
 @media screen and (max-width: 500px) {
+  html {
+    font-size: 25%; }
   .heading-primary-main {
     letter-spacing: 1.25rem; }
   .heading-primary-sub {
-    letter-spacing: 1rem; }
-  .main, .about, .work, .portfolio, .contact {
-    padding: 2rem 0rem !important; } }
+    letter-spacing: 1rem; } }
+
+@media screen and (max-width: 300px) {
+  html {
+    font-size: 15%; } }

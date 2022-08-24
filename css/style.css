@@ -375,8 +375,6 @@ footer {
     clip-path: polygon(0 25%, 100% 0, 100% 67%, 0 100%); } }
 
 @media screen and (max-width: 1200px) {
-  html {
-    font-size: 40%; }
   .title__text, .about__text {
     max-width: 80%; }
   .aboutpic {
@@ -384,20 +382,16 @@ footer {
 
 @media screen and (max-width: 1000px) {
   .title__text {
-    max-width: 50%; } }
+    max-width: 90%; } }
 
 @media screen and (max-width: 600px) {
-  html {
-    font-size: 35%; } }
+  .title__text, .about__text {
+    max-width: 100%; } }
 
 @media screen and (max-width: 500px) {
-  html {
-    font-size: 25%; }
   .heading-primary-main {
     letter-spacing: 1.25rem; }
   .heading-primary-sub {
-    letter-spacing: 1rem; } }
-
-@media screen and (max-width: 300px) {
-  html {
-    font-size: 15%; } }
+    letter-spacing: 1rem; }
+  .main, .about, .work, .portfolio, .contact {
+    padding: 2rem 0rem !important; } }

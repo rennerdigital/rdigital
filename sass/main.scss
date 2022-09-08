@@ -264,7 +264,7 @@ video {
 }
 
 .title, .about, .work, .portfolio .contact {
-   padding: 6rem;
+   padding: 6rem;//clue
    
    &__main {
       font-size: 8rem;
@@ -523,8 +523,11 @@ footer {
    }
 }
 
-@media screen and (max-width : 300px) {
+@media screen and (max-width : 450px) {
    html {
        font-size: 15%;
+   }
+   .title, .about, .work, .portfolio .contact {
+      padding: 0;
    }
 }

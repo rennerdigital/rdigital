@@ -395,7 +395,7 @@ footer {
   .heading-primary-main {
     letter-spacing: 1.25rem; }
   .heading-primary-sub {
-    letter-spacing: 1rem; } }
+    letter-spacing: 0.25rem; } }
 
 @media screen and (max-width: 450px) {
   html {

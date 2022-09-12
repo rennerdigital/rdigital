@@ -50,7 +50,7 @@ html {
 
 body {
   font-family: "Teko", sans-serif;
-  font-size: clamp(4rem, 2vw, 10rem);
+  font-size: clamp(40px, 2vw, 100px);
   font-weight: 400;
   line-height: 1.5;
   height: -webkit-fill-available;
@@ -79,7 +79,7 @@ video {
   max-width: 75vw;
   height: auto;
   margin: auto;
-  padding: 0 1.25rem; }
+  padding: 0 12.5px; }
 
 .header {
   position: fixed;
@@ -99,12 +99,12 @@ video {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  column-gap: 1rem;
+  column-gap: 10px;
   width: 100%;
-  height: 4.25rem;
+  height: 40.25px;
   margin: 0 auto; }
   .navbar.container {
-    margin-top: 2rem; }
+    margin-top: 20px; }
 
 .menu {
   position: fixed;
@@ -112,7 +112,7 @@ video {
   left: 0;
   width: 100%;
   height: auto;
-  padding: 4rem 0 3rem;
+  padding: 40px 0 3px;
   overflow: hidden;
   background-color: var(--color-black-300);
   box-shadow: var(--shadow-medium);
@@ -126,29 +126,29 @@ video {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    row-gap: 1.25rem; }
+    row-gap: 12.5px; }
   .menu__link {
     font-family: inherit;
-    font-size: 4rem;
+    font-size: 40px;
     font-weight: 500;
     line-height: 1.5;
     color: var(--color-white-100);
     text-transform: uppercase;
     transition: all 0.3s ease; }
-  @media only screen and (min-width: 48rem) {
+  @media only screen and (min-width: 650px) {
     .menu {
       position: relative;
       top: 0;
       width: auto;
       height: auto;
-      padding: 0rem;
+      padding: 0px;
       margin-left: auto;
       background: none;
       box-shadow: none; }
       .menu__inner {
         display: flex;
         flex-direction: row;
-        column-gap: 2rem;
+        column-gap: 20px;
         margin: 0 auto; }
       .menu__link {
         text-transform: capitalize; } }
@@ -160,16 +160,16 @@ video {
   user-select: none;
   order: -1;
   z-index: 10;
-  margin-top: 1rem;
-  width: 3.5rem;
-  height: 2rem;
+  margin-top: 10px;
+  width: 30.5px;
+  height: 20px;
   border: none;
   outline: none;
   background: none;
   visibility: visible;
   transform: rotate(0deg);
   transition: 0.35s ease; }
-  @media only screen and (min-width: 48rem) {
+  @media only screen and (min-width: 650px) {
     .burger {
       display: none;
       visibility: hidden; } }
@@ -188,18 +188,18 @@ video {
     .burger__line:nth-child(1) {
       top: 0px; }
     .burger__line:nth-child(2) {
-      top: 0.5rem; }
+      top: 5px; }
     .burger__line:nth-child(3) {
-      top: 1rem; }
+      top: 10px; }
   .burger.is-active .burger__line:nth-child(1) {
-    top: 0.5rem;
+    top: 5px;
     transform: rotate(135deg); }
   .burger.is-active .burger__line:nth-child(2) {
-    right: -1.5rem;
+    right: -15px;
     opacity: 0;
     visibility: hidden; }
   .burger.is-active .burger__line:nth-child(3) {
-    top: 0.5rem;
+    top: 5px;
     transform: rotate(-135deg); }
 
 .main, .about, .work, .portfolio, .contact {
@@ -207,49 +207,49 @@ video {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5rem 15vw;
+  padding: 50px 15vw;
   text-transform: uppercase; }
 
 .brand {
-  font-size: 5rem;
+  font-size: 50px;
   font-weight: 300;
   color: #fff;
-  letter-spacing: 1rem;
+  letter-spacing: 10px;
   animation: moveInTop 2s ease-out; }
 
-.title, .about, .work, .portfolio .contact {
-  padding: 6rem; }
-  .title__main, .about__main, .work__main, .portfolio .contact__main {
-    font-size: 8rem;
-    font-weight: 300;
-    letter-spacing: 1.75rem;
-    animation: moveInTop 2s ease-out; }
-  .title__sub, .about__sub, .work__sub, .portfolio .contact__sub {
-    color: gray;
-    font-size: 4rem;
+.title__main, .about__main, .work__main, .portfolio .contact__main {
+  font-size: 80px;
+  font-weight: 300;
+  letter-spacing: 17.5px;
+  animation: moveInTop 2s ease-out; }
+
+.title__sub, .about__sub, .work__sub, .portfolio .contact__sub {
+  color: gray;
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 17.5px;
+  animation: moveInLeft 2s ease-out; }
+  .title__sub--main, .about__sub--main, .work__sub--main, .portfolio .contact__sub--main {
+    color: black;
+    font-size: 20px;
     font-weight: 400;
-    letter-spacing: 1.75rem;
+    letter-spacing: 17.5px;
     animation: moveInLeft 2s ease-out; }
-    .title__sub--main, .about__sub--main, .work__sub--main, .portfolio .contact__sub--main {
-      color: gray;
-      font-size: 2rem;
-      font-weight: 400;
-      letter-spacing: 1.75rem;
-      animation: moveInLeft 2s ease-out; }
-    .title__sub--cdn, .about__sub--cdn, .work__sub--cdn, .portfolio .contact__sub--cdn {
-      color: red; }
-  .title__text, .about__text, .work__text, .portfolio .contact__text {
-    padding-top: 1rem;
-    padding-bottom: 2rem;
-    font-size: 3rem;
-    letter-spacing: 0.5rem;
-    animation: moveInBottom 2s ease-out;
-    text-transform: none; }
+  .title__sub--cdn, .about__sub--cdn, .work__sub--cdn, .portfolio .contact__sub--cdn {
+    color: red; }
+
+.title__text, .about__text, .work__text, .portfolio .contact__text {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-size: 30px;
+  letter-spacing: 5px;
+  animation: moveInBottom 2s ease-out;
+  text-transform: none; }
 
 .image {
-  margin-top: 4rem;
-  padding: 6rem;
-  min-height: 75rem;
+  margin-top: 40px;
+  padding: 60px;
+  min-height: 750px;
   min-width: 40%;
   background-image: linear-gradient(to right bottom, rgba(113, 169, 214, 0.8), rgba(36, 109, 114, 0.8)), url(../img/rd2scale.webp);
   background-size: cover;
@@ -258,9 +258,9 @@ video {
   clip-path: polygon(0 25%, 100% 0, 100% 67%, 0 100%); }
 
 .aboutpic {
-  margin-top: 4rem;
-  padding: 6rem;
-  min-height: 75rem;
+  margin-top: 40px;
+  padding: 60px;
+  min-height: 750px;
   min-width: 40%;
   background-image: linear-gradient(to right bottom, rgba(113, 169, 214, 0.8), rgba(36, 109, 114, 0.8)), url(../img/rd2profile.PNG);
   background-size: cover;
@@ -306,20 +306,20 @@ video {
 
 .btn:link, .btn:visited {
   text-decoration: none;
-  padding: 0.75rem 1rem 0.25rem 1rem;
-  margin-top: 1rem;
+  padding: 7.5px 10px 2.5px 10px;
+  margin-top: 10px;
   display: inline-block;
-  border-radius: 10rem;
+  border-radius: 100px;
   transition: all .2s;
   position: relative; }
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.8); }
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.8); }
 
 .btn:active {
   transform: translateY(-1px);
-  box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.8); }
+  box-shadow: 0 5px 10px rgba(255, 255, 255, 0.8); }
 
 .btn-white {
   background-color: black;
@@ -336,7 +336,7 @@ video {
   display: inline-block;
   height: 100%;
   width: 100%;
-  border-radius: 10rem;
+  border-radius: 100px;
   position: absolute;
   top: 0;
   left: 0;
@@ -355,7 +355,7 @@ video {
   animation-fill-mode: backwards; }
 
 footer {
-  font-size: 2rem; }
+  font-size: 20px; }
 
 @media screen and (max-width: 1700px) {
   html {
@@ -368,12 +368,15 @@ footer {
     color: black; }
   .main {
     min-height: 90vh;
-    padding-top: 30rem;
+    padding-top: 300px;
     background-image: linear-gradient(to right bottom, rgba(113, 169, 214, 0.8), rgba(36, 109, 114, 0.8)), url(../img/rd2scale.webp);
     background-size: cover;
     background-position: top;
     position: relative;
-    clip-path: polygon(0 25%, 100% 0, 100% 67%, 0 100%); } }
+    clip-path: polygon(0 15%, 100% 0, 100% 67%, 0 100%); }
+  .about, .work, .portfolio, .contact {
+    min-height: 90vh;
+    padding-top: 300px; } }
 
 @media screen and (max-width: 1200px) {
   .title__text, .about__text {
@@ -382,23 +385,43 @@ footer {
     display: none; } }
 
 @media screen and (max-width: 1000px) {
-  .title__text {
-    max-width: 90%; } }
+  .main, .about, .portfolio, .work, .contact {
+    padding-top: 100px; }
+  .menu__link {
+    font-size: 30px; } }
 
-@media screen and (max-width: 700px) {
-  html {
-    font-size: 35%; } }
+@media screen and (max-width: 800px) {
+  .menu__link {
+    font-size: 25px; } }
+
+@media screen and (max-width: 710px) {
+  .menu__link {
+    font-size: 20px; } }
 
 @media screen and (max-width: 500px) {
   html {
     font-size: 25%; }
   .heading-primary-main {
-    letter-spacing: 1.25rem; }
+    letter-spacing: 12.5px; }
   .heading-primary-sub {
-    letter-spacing: 0.25rem; } }
+    letter-spacing: 2.5px; } }
 
 @media screen and (max-width: 450px) {
-  html {
-    font-size: 15%; }
-  .title, .about, .work, .portfolio .contact {
-    padding: 0; } }
+  .title__main, .title__sub--main, .portfolio__main, .portfolio__sub, .work__main, .work__sub, .contact__main, .contact__sub {
+    font-size: 35px;
+    text-align: center; }
+  .about__main, .about__sub, .portfolio__main, .portfolio__sub, .work__main, .work__sub, .contact__main, .contact__sub {
+    font-size: 30px;
+    text-align: center; }
+  .title__text {
+    font-size: 30px;
+    text-align: left; }
+  .btn {
+    font-size: 20px; }
+  .title {
+    padding: 0; }
+  .main {
+    padding: 50px; }
+  .about, .work, .portfolio, .contact {
+    padding: 100px 0 0 0;
+    margin: 0 10px; } }

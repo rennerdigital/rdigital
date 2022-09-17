@@ -224,13 +224,13 @@ video {
   animation: moveInTop 2s ease-out; }
 
 .title__sub, .about__sub, .work__sub, .portfolio .contact__sub {
-  color: gray;
+  color: #0011ff;
   font-size: 40px;
   font-weight: 400;
   letter-spacing: 17.5px;
   animation: moveInLeft 2s ease-out; }
   .title__sub--main, .about__sub--main, .work__sub--main, .portfolio .contact__sub--main {
-    color: black;
+    color: #fff;
     font-size: 20px;
     font-weight: 400;
     letter-spacing: 17.5px;
@@ -242,6 +242,7 @@ video {
   padding-top: 10px;
   padding-bottom: 20px;
   font-size: 30px;
+  font-weight: 100;
   letter-spacing: 5px;
   animation: moveInBottom 2s ease-out;
   text-transform: none; }
@@ -357,9 +358,33 @@ video {
 footer {
   font-size: 20px; }
 
+#portbutton {
+  display: none; }
+
+.jumpmenu {
+  display: none; }
+
+.lititle {
+  font-size: 30px;
+  color: gray; }
+
+.lisub {
+  font-size: 25px; }
+
 @media screen and (max-width: 1700px) {
   html {
-    font-size: 50%; } }
+    font-size: 50%; }
+  #creds, #skills {
+    height: 100px; }
+  #portbutton {
+    display: inline-block; }
+  .jumpmenu {
+    display: inline-block;
+    padding-top: 20px;
+    font-size: 20px; }
+    .jumpmenu a {
+      color: gray;
+      font-weight: 100; } }
 
 @media screen and (max-width: 1350px) {
   .image {
@@ -408,20 +433,38 @@ footer {
 
 @media screen and (max-width: 450px) {
   .title__main, .title__sub--main, .portfolio__main, .portfolio__sub, .work__main, .work__sub, .contact__main, .contact__sub {
-    font-size: 35px;
-    text-align: center; }
-  .about__main, .about__sub, .portfolio__main, .portfolio__sub, .work__main, .work__sub, .contact__main, .contact__sub {
     font-size: 30px;
     text-align: center; }
-  .title__text {
-    font-size: 30px;
+  .about {
+    padding: 60px 0 0 0;
+    margin: 0 10px; }
+    .about__main {
+      font-size: 60px;
+      letter-spacing: 5px; }
+    .about__sub {
+      font-size: 45px;
+      text-align: center;
+      letter-spacing: 0; }
+    .about__text {
+      letter-spacing: 2px; }
+  .portfolio__main, .portfolio__sub, .work__main, .work__sub, .contact__main, .contact__sub {
+    font-size: 25px;
+    text-align: center; }
+  .title__text, .about__text {
+    font-weight: 100;
+    font-size: 25px;
     text-align: left; }
   .btn {
-    font-size: 20px; }
+    font-size: 15px; }
   .title {
     padding: 0; }
   .main {
     padding: 50px; }
-  .about, .work, .portfolio, .contact {
+  .work, .portfolio, .contact {
     padding: 100px 0 0 0;
-    margin: 0 10px; } }
+    margin: 0 10px; }
+  .navbar {
+    margin: 0; }
+  .jumpmenu {
+    padding: 0;
+    font-size: 15px; } }

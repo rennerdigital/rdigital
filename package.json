@@ -4,7 +4,7 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style3.css -w",
+    "compile:sass": "node-sass sass/main.scss css/style4.css -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
